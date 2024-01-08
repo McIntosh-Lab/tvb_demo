@@ -75,7 +75,7 @@ setup(
 13. Move back into the TVB folder and install this repository with:    
 ```
 cd ~/TVB
-git clone https://github.com/McIntosh-Lab/tvb_demo.git
+git clone ______________ #TODO
 ```
 
 14. Your setup is complete! You may start running code, but we recommend allocating a node (see the relevant steps in "Every time you relog").
@@ -131,4 +131,5 @@ With Job Submission, you can send multiple simulations to be run on multiple com
 3. Edit job submitter `./batch_job_submitter.sh` to your needs. Pay attention to lines commented with "TO EDIT".
 
 4. Submit jobs. Sample usage: `./batch_job_submitter.sh 1.65 2.05 25 0.02 0.05 7 param.txt /path/to/log_dir subjects.txt`. Run `./batch_job_submitter.sh` for help.
+
 
