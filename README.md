@@ -75,7 +75,7 @@ setup(
 13. Move back into the TVB folder and install this repository with:    
 ```
 cd ~/TVB
-git clone ______________ #TODO
+git clone https://github.com/McIntosh-Lab/tvb_demo.git
 ```
 
 14. Your setup is complete! You may start running code, but we recommend allocating a node (see the relevant steps in "Every time you relog").
