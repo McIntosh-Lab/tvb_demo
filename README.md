@@ -124,12 +124,16 @@ maxFCD,time_elapsed=model_montbrio.process_sub(subject,noise,G)
 ### Job Submission (Multiple simulations)
 With Job Submission, you can send multiple simulations to be run on multiple compute nodes. See here https://docs.alliancecan.ca/wiki/Running_jobs for more documentation on running jobs on Compute Canada.
 
-1. `cd ~/TVB/tvb_demo` 
+1. `module load scipy-stack`
 
-2. Edit simulation configurations in `model_montbrio.py` to your needs. Pay attention to lines commented with "TO EDIT". Line 11 is especially important, as you will need to specify how your Structural Connectivity (SC) matrix files are named.
+2. `. ~/TVB/virtual_aging_brain/env/bin/activate`
 
-3. Edit job submitter `./batch_job_submitter.sh` to your needs. Pay attention to lines commented with "TO EDIT".
+3. `cd ~/TVB/tvb_demo` 
 
-4. Submit jobs. Sample usage: `./batch_job_submitter.sh 1.65 2.05 25 0.02 0.05 7 param.txt /path/to/log_dir subjects.txt`. Run `./batch_job_submitter.sh` for help.
+4. Edit simulation configurations in `model_montbrio.py` to your needs. Pay attention to lines commented with "TO EDIT". Line 11 is especially important, as you will need to specify how your Structural Connectivity (SC) matrix files are named.
+
+5. Edit job submitter `./batch_job_submitter.sh` to your needs. Pay attention to lines commented with "TO EDIT".
+
+6. Submit jobs. Sample usage: `./batch_job_submitter.sh 1.65 2.05 25 0.02 0.05 7 param.txt /path/to/log_dir subjects.txt`. Run `./batch_job_submitter.sh` for help.
 
 
