@@ -7,7 +7,7 @@ You will only need to run these steps **once** per Compute Canada user.
 
 1. Open Terminal.
 
-2. Start a new SSH session on Compute Canada with `ssh <username>@cedar.computecanada.ca`. You will be prompted for a password. The username and password should be your Digital Research Alliance of Canada or CCDB username and password.
+2. Start a new SSH session on Compute Canada with `ssh <username>@cedar.alliancecan.ca`. You will be prompted for a password. The username and password should be your Digital Research Alliance of Canada or CCDB username and password.
 
 3. You will be logged into your home directory on Cedar.
 
