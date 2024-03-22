@@ -9,7 +9,7 @@ You will only need to run these steps **once** per Compute Canada user.
 
 2. Start a new SSH session on Compute Canada with `ssh <username>@cedar.alliancecan.ca`. You will be prompted for a password. The username and password should be your Digital Research Alliance of Canada or CCDB username and password.
 
-3. You will be logged into your home directory on Cedar.
+3. You will be logged into your home directory, or `~`,  on Cedar.
 
 4. Create a TVB directory with `mkdir TVB` and go into it with `cd TVB`.
 
@@ -30,37 +30,13 @@ pip3 install -e .
 
 6. Go back into the TVB directory with `cd ..`.
 
-7. Create another directory called "virtual_ageing" with `mkdir virtual_ageing` and move into it with `cd virtual_ageing`.
+7. Sign up for an EBRAINS account and download the `virtual_ageing` directory from [this page](https://drive.ebrains.eu/library/c8e689b3-b6c6-4c3f-a863-2223def05cbc/SGA3%20D1.2%20Showcase%201/) to your local computer.
+![image](https://github.com/McIntosh-Lab/tvb_demo/assets/32205576/22e324d2-1182-4009-8f0d-60107fe903b1) 
 
-8. Create a file called "setup.py" by running `nano setup.py` and pasting in the following lines:
-```
-from setuptools import find_packages, setup
 
-setup(
-    name='showcase1_ageing',
-    packages=find_packages(),
-    version='0.1.0',
-    install_requires=[
-        'numpy<=1.20',
-        'pingouin',
-        'joblib',
-        'siibra',
-        'ipywidgets',
-        'seaborn',
-        'pandas',
-        'pyunicore==0.9.12',
-        'dataclasses',
-        'ebrains-drive',
-        'pyro-ppl==1.3.1',
-        'torch==1.6.0',
-        'sbi==v0.14.2',
-        'tvb-library @ git+https://github.com/the-virtual-brain/tvb-root/@parameters-api#egg=tvb-library&subdirectory=scientific_library',
-        'tvb-ebrains-data @ git+https://gitlab.ebrains.eu/fousekjan/tvb-ebrains-data.git@0.2.5'
-    ]
-)
-```
+8. Upload the downloaded `virtual_ageing` directory to your TVB directory. For instance: using a separate instance of the Terminal app, run `scp -r ./virtual_ageing USERNAME@cedar.computecanada.ca:/home/USERNAME/TVB`
 
-9. Press "ctrl+x", followed by "y" and then "enter" to save setup.py.
+9. Back in your original Terminal instance, you should still be in `~/TVB` or `/home/USERNAME/TVB`. Move into the newly uploaded `virtual_ageing` directory with `cd virtual_ageing`.
 
 10. Run `module load scipy-stack`.
 
