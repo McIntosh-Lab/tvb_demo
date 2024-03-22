@@ -32,7 +32,7 @@ pip3 install -e .
 
 7. Sign up for an EBRAINS account and download the `virtual_ageing` directory from [this page](https://drive.ebrains.eu/library/c8e689b3-b6c6-4c3f-a863-2223def05cbc/SGA3%20D1.2%20Showcase%201/) to your local computer.
 
-![image](https://github.com/McIntosh-Lab/tvb_demo/assets/32205576/22e324d2-1182-4009-8f0d-60107fe903b1) 
+&nbsp;&nbsp;&nbsp;&nbsp;![image](https://github.com/McIntosh-Lab/tvb_demo/assets/32205576/22e324d2-1182-4009-8f0d-60107fe903b1) 
 
 
 8. Upload the downloaded `virtual_ageing` directory to your TVB directory. For instance: using a separate instance of the Terminal app, run `scp -r ./virtual_ageing USERNAME@cedar.computecanada.ca:/home/USERNAME/TVB`
