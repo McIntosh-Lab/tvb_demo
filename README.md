@@ -55,7 +55,7 @@ cd ~/TVB
 git clone https://github.com/McIntosh-Lab/tvb_demo.git
 ```
 
-14. In order to use TVB in [JupyterLab](https://jupyterhub.cedar.computecanada.ca/), you will need to setup a kernel for TVB. After running the following commands, you should be able to create Notebooks with the PythonTVB kernel and run existing TVB Notebooks using the PythonTVB kernel on JupyterLab.
+14. In order to use TVB in [JupyterLab](https://jupyterhub.cedar.computecanada.ca/), you will need to setup a kernel for TVB. After running the following commands, you should be able to create Notebooks with the PythonTVB kernel and run existing TVB Notebooks using the PythonTVB kernel on JupyterLab. You must have the virtual_aging_brain Python environment activated to run the following commands (which you should already have in step 11 if you have not started a new terminal session):
 ```
 mkdir -p ~/.local/share/jupyter/kernels
 pip install --no-index ipykernel
