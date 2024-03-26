@@ -55,7 +55,15 @@ cd ~/TVB
 git clone https://github.com/McIntosh-Lab/tvb_demo.git
 ```
 
-14. Your setup is complete! You may start running code, but we recommend allocating a node (see the relevant steps in "Every time you relog").
+14. In order to use TVB in JupyterLab, you will need to setup a kernel for TVB:
+```
+mkdir -p ~/.local/share/jupyter/kernels
+pip install --no-index ipykernel
+python -m ipykernel install --user --name "PythonTVB" --display-name "PythonTVB"
+```
+After running these commands, on your next instance of [JupyterLab](https://jupyterhub.cedar.computecanada.ca/), you should be able to create Notebooks with the PythonTVB kernel and run existing TVB Notebooks using the PythonTVB kernel.
+    
+15. Your setup is complete! You may start running code, but we recommend allocating a node (see the relevant steps in "Every time you relog").
 
 
 <br>
