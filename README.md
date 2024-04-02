@@ -49,9 +49,11 @@ pip3 install -e .
  pip install -e .
  ```
 
-13. Move back into the TVB folder and install this repository with:    
+13. Simulations and jobs in general will need to be run on `/scratch`. Let's create a `TVB_jobs` directory there and install this repository with:    
 ```
-cd ~/TVB
+cd ~/scratch
+mkdir TVB_jobs
+cd TVB_jobs
 git clone https://github.com/McIntosh-Lab/tvb_demo.git
 ```
 
@@ -81,13 +83,13 @@ Once initial setup has been completed, you can run the following in subsequent S
 ### Interactive Session/Job (Single simulation)
 You will often use an interactive session/job if you wish to run a single simulation and/or debug your workflow. This will allow you to use a compute node more directly - see: https://docs.alliancecan.ca/wiki/Running_jobs#Interactive_jobs
 
-1. Allocate a compute node with `salloc --time=3:00:00 --mem=8000MB --account=<account>`. What you put in "\<account\>" will depend on which Compute Canada allocation you are working under. For the McIntosh lab, this will be `def-rmcintos` or `rrg-rmcintos`. 
+1. Allocate a compute node with `salloc --time=3:00:00 --mem=8000MB --account=<account>`. What you put in "\<account\>" will depend on which Compute Canada allocation you are working under. For the McIntosh lab, this will be `def-rmcintos` or `rrg-rmcintos`. Make sure you are in `~/scratch` when you run the `salloc` command.
 
 2. `module load scipy-stack`
 
 3. `. ~/TVB/virtual_aging_brain/env/bin/activate`
 
-4. `cd ~/TVB/tvb_demo`
+4. `cd ~/scratch/TVB_jobs/tvb_demo`
 
 5. Edit simulation configurations in `model_montbrio.py` to your needs. Pay attention to lines commented with "TO EDIT". Line 11 is especially important, as you will need to specify how your Structural Connectivity (SC) matrix files are named.
 
@@ -112,7 +114,7 @@ With Job Submission, you can send multiple simulations to be run on multiple com
 
 2. `. ~/TVB/virtual_aging_brain/env/bin/activate`
 
-3. `cd ~/TVB/tvb_demo` 
+3. `cd ~/scratch/TVB_jobs/tvb_demo` 
 
 4. Edit simulation configurations in `model_montbrio.py` to your needs. Pay attention to lines commented with "TO EDIT". Line 11 is especially important, as you will need to specify how your Structural Connectivity (SC) matrix files are named.
 
