@@ -28,7 +28,7 @@ pip3 install -r requirements.txt
 pip3 install -e .
 ```
 
-6. Go back into the TVB directory with `cd ..`.
+6. Deactivate your Python environment by running `deactivate` and go back into the TVB directory with `cd ..`.
 
 7. Sign up for an EBRAINS account and download the `virtual_ageing` directory from [this page](https://drive.ebrains.eu/library/c8e689b3-b6c6-4c3f-a863-2223def05cbc/SGA3%20D1.2%20Showcase%201/) to your local computer.
 
@@ -41,7 +41,7 @@ pip3 install -e .
 
 10. Run `module load scipy-stack`.
 
-11. Activate the virtual_aging_brain Python environment with `. ~/TVB/virtual_aging_brain/env/bin/activate`.
+11. Activate the virtual_aging_brain Python environment again with `. ~/TVB/virtual_aging_brain/env/bin/activate`.
 
 12. Install some more packages outlined in setup.py using:
  ```
