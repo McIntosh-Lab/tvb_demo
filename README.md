@@ -49,7 +49,7 @@ pip3 install -e .
  pip install -e .
  ```
 
-13. Simulations and jobs in general will need to be run on `/scratch`. Let's create a `TVB_jobs` directory there and install this repository with:    
+13. Simulations and jobs in general will need to be run from `/scratch`. Let's create a `TVB_jobs` directory there and install this repository with:    
 ```
 cd ~/scratch
 mkdir TVB_jobs
