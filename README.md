@@ -5,11 +5,11 @@ Much of our workflow adapts from [Virtual Aging Brain](https://github.com/ins-am
 # Initial Setup on Compute Canada
 You will only need to run these steps **once** per Compute Canada user. 
 
-1. Open Terminal. You should **not** have the `scipy-stack` module loaded yet at this point.
+1. Open Terminal. 
 
-2. Start a new SSH session on Compute Canada with `ssh <username>@cedar.alliancecan.ca`. You will be prompted for a password. The username and password should be your Digital Research Alliance of Canada or CCDB username and password.
+2. Start a new SSH session on Compute Canada with `ssh <username>@cedar.alliancecan.ca`. You will be prompted for a password. The username and password should be your Digital Research Alliance of Canada or CCDB username and password. 
 
-3. You will be logged into your home directory, or `~`,  on Cedar.
+3. You will be logged into your home directory, or `~`,  on Cedar. You should **not** have the `scipy-stack` module loaded yet at this point.
 
 4. Create a TVB directory with `mkdir TVB` and go into it with `cd TVB`.
 
