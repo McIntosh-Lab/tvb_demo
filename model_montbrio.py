@@ -1,8 +1,13 @@
+import sys, os, time
 import numpy as np
-from tvb.simulator.lab import connectivity, simulator, models, coupling, integrators, monitors, noise
-import showcase1_ageing as utils  # Custom utility module
+import showcase1_ageing as utils
+from tvb.simulator.lab import *
+from tvb.simulator.backend.nb_mpr import NbMPRBackend
+import matplotlib.pyplot as plt
 import pandas as pd
-import time
+import seaborn as sns
+
+#from tvb.simulator.lab import connectivity, simulator, models, coupling, integrators, monitors, noise
 
 def get_connectivity(scaling_factor, subject):
     """
@@ -61,7 +66,7 @@ def process_sub(subject, my_noise, my_G):
     ).configure()
 
     # Run the simulation
-    runner = simulator.backend.NbMPRBackend()
+    runner = NbMPRBackend()
     (tavg_t, tavg_d), = runner.run_sim(sim, simulation_length=30e3)
     tavg_t *= 10
     
