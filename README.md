@@ -48,7 +48,7 @@ pip3 install -e .
  pip install --upgrade pip
  pip install -e .
  ```
-If you are encountering an error, especially one along the lines of `ERROR: No matching distribution found for numpy<=1.20`, try immediately running the following:
+If you are encountering an error, especially one along the lines of `ERROR: No matching distribution found for numpy<=1.20`, subsequently running one of the following should resolve the error:
 ```
 module load scipy-stack
 . ~/TVB/virtual_aging_brain/env/bin/activate
