@@ -48,6 +48,20 @@ pip3 install -e .
  pip install --upgrade pip
  pip install -e .
  ```
+If you are encountering an error, especially one along the lines of `ERROR: No matching distribution found for numpy<=1.20`, try immediately running the following:
+```
+module load scipy-stack
+. ~/TVB/virtual_aging_brain/env/bin/activate
+pip install --upgrade pip
+pip install -e .
+```
+or
+```
+. ~/TVB/virtual_aging_brain/env/bin/activate
+module load scipy-stack
+pip install --upgrade pip
+pip install -e .
+```
 
 13. Simulations and jobs in general will need to be run from `/scratch`. Let's create a `TVB_jobs` directory there and install this repository with:    
 ```
