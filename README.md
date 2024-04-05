@@ -13,7 +13,7 @@ You will only need to run these steps **once** per Compute Canada user.
 
 4. Create a TVB directory with `mkdir TVB` and go into it with `cd TVB`.
 
-5. Run steps 1 and 2 from [Virtual Aging Brain](https://github.com/ins-amu/virtual_aging_brain) under "Python Environment in Linux and MacOS". Alternatively, run the following commands:
+5. If your current python version (output of `python3 --version`) is 3.9 or greater, then run `module load StdEnv/2020`. Run steps 1 and 2 from [Virtual Aging Brain](https://github.com/ins-amu/virtual_aging_brain) under "Python Environment in Linux and MacOS". Alternatively, run the following commands:
 ```
 git clone https://github.com/ins-amu/virtual_aging_brain.git 
 cd virtual_aging_brain 
