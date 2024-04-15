@@ -39,7 +39,7 @@ pip3 install -e .
 
 9. Back in your original Terminal instance, you should still be in `~/TVB` or `/home/USERNAME/TVB`. Move into the newly uploaded `virtual_ageing` directory with `cd virtual_ageing`.
 
-10. Run `module load scipy-stack`.
+10. Run `module load scipy-stack`. If `python --version` does not show 3.7.7 then run `module load python/3.7.7` as well.
 
 11. Activate the virtual_aging_brain Python environment again with `. ~/TVB/virtual_aging_brain/env/bin/activate`.
 
