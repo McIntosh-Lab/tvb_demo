@@ -77,7 +77,7 @@ mkdir -p ~/.local/share/jupyter/kernels
 pip install --no-index ipykernel
 python -m ipykernel install --user --name "PythonTVB" --display-name "PythonTVB"
 ```
-    
+If you have JupyterHub already open, log out and restart in order to use the new kernels.
 15. Your setup is complete! You may start running code, but we recommend allocating a node (see the relevant steps in "Every time you relog").
 
 
