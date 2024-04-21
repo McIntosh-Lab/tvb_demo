@@ -8,7 +8,7 @@ Try the [Quickstart installation instructions](https://github.com/McIntosh-Lab/t
 # Initial Setup on Compute Canada
 You will only need to run these steps **once** per Compute Canada user. 
 
-1. Open Terminal. 
+1. Open Terminal and run `module reset`.
 
 2. Start a new SSH session on Compute Canada with `ssh <username>@cedar.alliancecan.ca`. You will be prompted for a password. The username and password should be your Digital Research Alliance of Canada or CCDB username and password. 
 
