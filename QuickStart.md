@@ -9,7 +9,7 @@ Perform the following with a clean, new Cedar session - do not load any modules 
 
 ```
 cd ~
-mkdir TVB    # Assuming you don't already have a TVB install there. Either delete the existing TVB install or use a different directory name for the rest of these steps. 
+mkdir TVB    # Assuming you don't already have a TVB install there. Otherwise, either delete the existing TVB install or use a different directory name for the rest of these steps. 
 cd TVB
 module load StdEnv/2020
 python3 --version    # This should return 3.7.7
