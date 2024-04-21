@@ -1,6 +1,7 @@
 ## Quick Start
 You will only need to run these steps once per Compute Canada user. The following instructions are meant to be a quickstart for installing TVB. If you come across any errors or unexpected outputs (e.g. one of the below `python3 --version` calls does not produce the expected output) then try the detailed installation [here](https://github.com/McIntosh-Lab/tvb_demo/tree/main).
 
+The below instructions assume that you have not installed TVB before.
 
 
 ### Instructions
@@ -35,7 +36,7 @@ Obtain the `virtual_ageing` directory using steps 7 and 8 from `Initial Setup on
 cd virtual_ageing/
 python3 --version   # This should return 3.7.7
 module load scipy-stack/2023b
-. ~/TVB/virtual_aging_brain/env/bin/activate
+. ~/TVB/virtual_aging_brain/env/bin/activate    # Again, assuming your installation is in ~/TVB
 python3 --version   # This should return 3.7.7
 pip install --upgrade pip
 pip install -e .
