@@ -8,6 +8,7 @@ You will only need to run these steps once per Compute Canada user. The followin
 Perform the following with a clean, new Cedar session - do not load any modules before running these steps:
 
 ```
+module reset
 cd ~
 mkdir TVB    # Assuming you don't already have a TVB install there. Otherwise, either delete the existing TVB install or use a different directory name for the rest of these steps. 
 cd TVB
