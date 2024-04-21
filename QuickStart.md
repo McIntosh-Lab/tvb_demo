@@ -1,5 +1,5 @@
 ## Quick Start
-The following instructions are meant to be a quickstart. If you come across any errors or unexpected outputs (e.g. one of the below `python3 --version` calls does not produce the expected output) then try the detailed installation [here](https://github.com/McIntosh-Lab/tvb_demo/tree/main).
+The following instructions are meant to be a quickstart for installing TVB. If you come across any errors or unexpected outputs (e.g. one of the below `python3 --version` calls does not produce the expected output) then try the detailed installation [here](https://github.com/McIntosh-Lab/tvb_demo/tree/main).
 
 
 
@@ -28,7 +28,7 @@ deactivate
 cd ..
 ```
 
-Obtain the `virtual_ageing` directory using steps 7 and 8 from [here](https://github.com/McIntosh-Lab/tvb_demo/tree/main).
+Obtain the `virtual_ageing` directory using steps 7 and 8 from `Initial Setup on Compute Canada` [here](https://github.com/McIntosh-Lab/tvb_demo/tree/main).
 
 ```
 cd virtual_ageing/
