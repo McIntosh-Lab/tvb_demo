@@ -2,6 +2,9 @@ This demo showcases a parameter search within the Montbrio model, focusing on op
 
 Much of our workflow adapts from [Virtual Aging Brain](https://github.com/ins-amu/virtual_aging_brain) and [Virtual Ageing Showcase](https://lab.ch.ebrains.eu/user-redirect/lab/tree/shared/SGA3%20D1.2%20Showcase%201/virtual_ageing). Please see [Virtual Aging Brain Notebooks]([https://github.com/ins-amu/virtual_aging_brain](https://github.com/ins-amu/virtual_aging_brain/tree/main/notebooks)) and [Virtual Ageing Showcase](https://lab.ch.ebrains.eu/user-redirect/lab/tree/shared/SGA3%20D1.2%20Showcase%201/virtual_ageing) for more detailed tutorials. 
 
+# Installation Quickstart
+Try the [Quickstart installation instructions](https://github.com/McIntosh-Lab/tvb_demo/blob/main/QuickStart.md) first.
+
 # Initial Setup on Compute Canada
 You will only need to run these steps **once** per Compute Canada user. 
 
