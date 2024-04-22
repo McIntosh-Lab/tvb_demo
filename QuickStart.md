@@ -33,7 +33,7 @@ cd ..
 Obtain the `virtual_ageing` directory using steps 7 and 8 from `Initial Setup on Compute Canada` [here](https://github.com/McIntosh-Lab/tvb_demo/tree/main).
 
 ```
-cd virtual_ageing/
+cd virtual_ageing/ # You should be in ~/TVB/virtual_ageing
 python3 --version   # This should return 3.7.7
 module load scipy-stack/2023b
 . ~/TVB/virtual_aging_brain/env/bin/activate    # Again, assuming your installation is in ~/TVB
