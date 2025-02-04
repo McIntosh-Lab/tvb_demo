@@ -22,8 +22,8 @@ exit()
 rm -rf env
 python3 -m venv env
 . env/bin/activate
-pip3 install --upgrade pip
-pip3 install wheel
+pip3 install --upgrade pip==23.3.1 
+pip3 install wheel==0.42.0
 pip3 install -r requirements.txt
 pip3 install -e .
 deactivate
