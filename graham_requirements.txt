@@ -116,9 +116,10 @@ torch==1.6.0+computecanada
 tqdm==4.66.1+computecanada
 traitlets==5.9.0+computecanada
 tvb-data==2.0
-tvb-ebrains-data @ git+https://gitlab.ebrains.eu/fousekjan/tvb-ebrains-data.git@f2a35c6bb68a4c4f14309c49e515f33b7d4aa2dd
-tvb-library @ git+https://github.com/the-virtual-brain/tvb-root/@f570bf618fbb885ec12bf36ab920f3b43d0d8c27#subdirectory=scientific_library
-typing==3.7.4.3+computecanada
+tvb-ebrains-data @ git+https://gitlab.ebrains.eu/fousekjan/tvb-ebrains-data.git@0.2.5
+#git+https://gitlab.ebrains.eu/fousekjan/tvb-ebrains-data.git@f2a35c6bb68a4c4f14309c49e515f33b7d4aa2dd
+tvb-library @ git+https://github.com/the-virtual-brain/tvb-root/@parameters-api#egg=tvb-library&subdirectory=scientific_library
+#git+https://github.com/the-virtual-brain/tvb-root/@f570bf618fbb885ec12bf36ab920f3b43d0d8c27#subdirectory=scientific_librarytyping==3.7.4.3+computecanada
 typing_extensions==4.7.1+computecanada
 urllib3==2.0.7
 wcwidth==0.2.12+computecanada
