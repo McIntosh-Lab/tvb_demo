@@ -49,5 +49,5 @@ python3 --version   # This should return 3.7.7
 #
 mkdir -p ~/.local/share/jupyter/kernels
 pip install --no-index ipykernel
-python -m ipykernel install --user --name "PythonTVB" --display-name "PythonTVB"   # Assuming you have not created a PythonTVB kernel before. Use a new name if you have.
+python -m ipykernel install --user --name "TVB" --display-name "TVB"   # Assuming you have not created a PythonTVB kernel before. Use a new name if you have.
 ```
