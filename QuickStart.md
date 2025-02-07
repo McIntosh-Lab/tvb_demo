@@ -42,7 +42,7 @@ Obtain the `virtual_ageing` directory using steps 7 and 8 from `Initial Setup on
 
 ```
 # Install all dependencies, including virtual_aging_brain and virtual_ageing
-pip install -r requirements_freeze.txt
+pip install -r TVB_requirements.txt
 
 python3 --version   # This should return 3.7.7
 
