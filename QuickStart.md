@@ -4,7 +4,7 @@ You will only need to run these steps once per Compute Canada user. The followin
 The below instructions assume that you have not installed TVB before.
 
 
-### Instructions
+### First-time Setup Instructions
 
 Perform the following with a clean, new Cedar session - do not load any modules before running these steps:
 
@@ -50,4 +50,13 @@ python3 --version   # This should return 3.7.7
 mkdir -p ~/.local/share/jupyter/kernels
 pip install --no-index ipykernel
 python -m ipykernel install --user --name "TVB" --display-name "TVB"   # Assuming you have not created a PythonTVB kernel before. Use a new name if you have.
+```
+
+
+
+### Subsequent Usage
+If you need to use TVB, make sure to load the environment you've set up, in command-line or within the script/job you intend to run:
+
+```
+. ~/TVB/env/bin/activate
 ```
