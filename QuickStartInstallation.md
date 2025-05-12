@@ -1,4 +1,4 @@
-## Quick Start
+## Quick Start Installation
 You will only need to run these steps once per Compute Canada user. The following instructions are meant to be a quickstart for installing TVB. If you come across any errors or unexpected outputs (e.g. one of the below `python3 --version` calls does not produce the expected output) then try the detailed installation [here](https://github.com/McIntosh-Lab/tvb_demo/tree/main).
 
 The below instructions assume that you have not installed TVB before.
