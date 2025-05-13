@@ -86,20 +86,20 @@ Once initial setup has been completed, you can run the following in subsequent S
 <br>
 
 
-### tvb-demo Quickstart Simulation - Interactive Session/Job (Single simulation)
+# tvb-demo Quickstart Simulation - Interactive Session/Job (Single simulation)
 You will often use an interactive session/job if you wish to run a single simulation and/or debug your workflow. This will allow you to use a compute node more directly - see: https://docs.alliancecan.ca/wiki/Running_jobs#Interactive_jobs
 
 1. Allocate a compute node with `salloc --time=3:00:00 --mem=8000MB --account=<account>`. What you put in "\<account\>" will depend on which Compute Canada allocation you are working under. For the McIntosh lab, this will be `def-rmcintos` or `rrg-rmcintos`. Make sure you are in `~/scratch` when you run the `salloc` command.
 
 2. `module load scipy-stack`
 
-3. `. ~/TVB/virtual_aging_brain/env/bin/activate`
+3. `. ~/TVB/env/bin/activate`
 
-4. `cd ~/scratch/TVB_jobs/tvb_demo`
+4. `cd ~/scratch/TVB_jobs/tvb_demo/QuickStartSimulation/`
 
 5. Edit simulation configurations in `model_montbrio.py` to your needs. Pay attention to lines commented with "TO EDIT". Line 11 is especially important, as you will need to specify how your Structural Connectivity (SC) matrix files are named.
 
-6. You can run a simulation by calling the single simulation runner script: `python single_sim_runner.py <subject> <noise> <G>` or with an interactive python session:
+6. You can run a simulation by calling the single simulation runner script: `python -i single_sim_runner.py <subject> <noise> <G>` or with an interactive python session:
 ```
 python
 import sys, os, time, fcntl
@@ -113,14 +113,14 @@ maxFCD,time_elapsed=model_montbrio.process_sub(subject,noise,G)
 <br>
 
 
-### tvb-demo Quickstart Simulation - Multiple Job Submission (Multiple simulations)
+# tvb-demo Quickstart Simulation - Multiple Job Submission (Multiple simulations)
 With Job Submission, you can send multiple simulations to be run on multiple compute nodes. See here https://docs.alliancecan.ca/wiki/Running_jobs for more documentation on running jobs on Compute Canada.
 
 1. `module load scipy-stack`
 
-2. `. ~/TVB/virtual_aging_brain/env/bin/activate`
+2. `. ~/TVB/env/bin/activate`
 
-3. `cd ~/scratch/TVB_jobs/tvb_demo` 
+3. `cd ~/scratch/TVB_jobs/tvb_demo/QuickStartSimulation/` 
 
 4. Edit simulation configurations in `model_montbrio.py` to your needs. Pay attention to lines commented with "TO EDIT". Line 11 is especially important, as you will need to specify how your Structural Connectivity (SC) matrix files are named.
 
