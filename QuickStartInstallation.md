@@ -1,12 +1,12 @@
 ## Quick Start Installation
-You will only need to run these steps once per Compute Canada user. The following instructions are meant to be a quickstart for installing TVB. If you come across any errors or unexpected outputs (e.g. one of the below `python3 --version` calls does not produce the expected output) then try the detailed installation [here](https://github.com/McIntosh-Lab/tvb_demo/tree/main).
+You will only need to run these steps once per user per Digital Research Alliance of Canada (DRA) cluster, (e.g. Fir, Graham, Narval, etc.). The following instructions are meant to be a quickstart for installing TVB. If you come across any errors or unexpected outputs (e.g. one of the below `python3 --version` calls does not produce the expected output) then try the detailed installation [here](https://github.com/McIntosh-Lab/tvb_demo/tree/main).
 
 The below instructions assume that you have not installed TVB before.
 
 
-### First-time Setup Instructions
+### First-Time Setup Instructions
 
-Perform the following with a clean, new Cedar session - do not load any modules before running these steps:
+Perform the following with a clean, new session on a DRA cluster - do not load any modules before running these steps:
 
 ```
 # Reset module environment
@@ -16,7 +16,7 @@ module reset
 cd ~
 
 # Create and navigate to the installation directory
-mkdir TVB  # Skip this if TVB already exists
+mkdir TVB  # If TVB already exists, then either delete it or use a different dir name for this and remaining steps
 cd TVB
 
 # Load required modules
@@ -33,7 +33,7 @@ python3 -m venv env
 pip install --upgrade pip==23.3.1 wheel==0.42.0
 
 #Download TVB_requirements.txt
-wget https://raw.githubusercontent.com/McIntosh-Lab/tvb_demo/refs/heads/dev/TVB_requirements.txt
+wget https://raw.githubusercontent.com/McIntosh-Lab/tvb_demo/refs/heads/main/TVB_requirements.txt
 
 ```
 
