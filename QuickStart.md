@@ -1,17 +1,17 @@
 ## Quick Start
-You will only need to run these steps once per Compute Canada user. The following instructions are meant to be a quickstart for installing TVB. If you come across any errors or unexpected outputs (e.g. one of the below `python3 --version` calls does not produce the expected output) then try the detailed installation [here](https://github.com/McIntosh-Lab/tvb_demo/tree/main).
+You will only need to run these steps once per user per Digital Research Alliance of Canada (DRA) cluster, (e.g. Fir, Graham, Narval, etc.). The following instructions are meant to be a quickstart for installing TVB. If you come across any errors or unexpected outputs (e.g. one of the below `python3 --version` calls does not produce the expected output) then try the detailed installation [here](https://github.com/McIntosh-Lab/tvb_demo/tree/main).
 
 The below instructions assume that you have not installed TVB before.
 
 
 ### Instructions
 
-Perform the following with a clean, new Cedar session - do not load any modules before running these steps:
+Perform the following with a clean, new session on a DRA cluster - do not load any modules before running these steps:
 
 ```
 module reset
 cd ~
-mkdir TVB    # Assuming you don't already have a TVB install there. Otherwise, either delete the existing TVB install or use a different directory name for the rest of these steps. 
+mkdir TVB    # Assuming you don't already have a TVB install there. Otherwise, either delete the existing TVB install or use a different directory name than TVB for this and the remaining steps. 
 cd TVB
 module load StdEnv/2020
 python3 --version    # This should return 3.7.7
